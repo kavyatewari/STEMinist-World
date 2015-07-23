@@ -9,6 +9,9 @@
 import UIKit
 
 class TechViewController: UIViewController {
+    
+    
+    
 
     override func viewDidDisappear(animated: Bool) {
         UITabBar.appearance().tintColor = UIColor.blueColor()
@@ -37,3 +40,5 @@ class TechViewController: UIViewController {
     */
 
 }
+
+
