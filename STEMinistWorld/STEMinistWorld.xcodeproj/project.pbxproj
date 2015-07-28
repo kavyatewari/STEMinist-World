@@ -16,6 +16,7 @@
 		C749F40C1B542B5A004311A8 /* TechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749F40B1B542B5A004311A8 /* TechViewController.swift */; };
 		C749F40E1B542B68004311A8 /* EngineeringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749F40D1B542B68004311A8 /* EngineeringViewController.swift */; };
 		C749F4101B542B71004311A8 /* MathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749F40F1B542B71004311A8 /* MathViewController.swift */; };
+		C78486851B61A77400B4E734 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78486841B61A77400B4E734 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		C749F40B1B542B5A004311A8 /* TechViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechViewController.swift; sourceTree = "<group>"; };
 		C749F40D1B542B68004311A8 /* EngineeringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngineeringViewController.swift; sourceTree = "<group>"; };
 		C749F40F1B542B71004311A8 /* MathViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathViewController.swift; sourceTree = "<group>"; };
+		C78486841B61A77400B4E734 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = ViewControllers/ViewControllers/WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				C749F40B1B542B5A004311A8 /* TechViewController.swift */,
 				C749F40D1B542B68004311A8 /* EngineeringViewController.swift */,
 				C749F40F1B542B71004311A8 /* MathViewController.swift */,
+				C78486841B61A77400B4E734 /* WelcomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				C749F40E1B542B68004311A8 /* EngineeringViewController.swift in Sources */,
 				C749F4101B542B71004311A8 /* MathViewController.swift in Sources */,
 				C749F40C1B542B5A004311A8 /* TechViewController.swift in Sources */,
+				C78486851B61A77400B4E734 /* WelcomeViewController.swift in Sources */,
 				C749F3E91B541D18004311A8 /* AppDelegate.swift in Sources */,
 				C749F40A1B542B49004311A8 /* ScienceViewController.swift in Sources */,
 			);
