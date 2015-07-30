@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70AE09E1B6984F100CBABF0 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70AE09D1B6984F100CBABF0 /* ModalViewController.swift */; };
 		C749F3E91B541D18004311A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749F3E81B541D18004311A8 /* AppDelegate.swift */; };
 		C749F3EE1B541D18004311A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C749F3EC1B541D18004311A8 /* Main.storyboard */; };
 		C749F3F01B541D18004311A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C749F3EF1B541D18004311A8 /* Images.xcassets */; };
 		C749F3F31B541D18004311A8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C749F3F11B541D18004311A8 /* LaunchScreen.xib */; };
 		C749F3FF1B541D19004311A8 /* STEMinistWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749F3FE1B541D19004311A8 /* STEMinistWorldTests.swift */; };
 		C749F40A1B542B49004311A8 /* ScienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749F4091B542B49004311A8 /* ScienceViewController.swift */; };
-		C749F40C1B542B5A004311A8 /* TechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749F40B1B542B5A004311A8 /* TechViewController.swift */; };
-		C749F40E1B542B68004311A8 /* EngineeringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749F40D1B542B68004311A8 /* EngineeringViewController.swift */; };
-		C749F4101B542B71004311A8 /* MathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749F40F1B542B71004311A8 /* MathViewController.swift */; };
 		C78486851B61A77400B4E734 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78486841B61A77400B4E734 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C70AE09D1B6984F100CBABF0 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		C749F3E31B541D18004311A8 /* STEMinistWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STEMinistWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C749F3E71B541D18004311A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C749F3E81B541D18004311A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,9 +39,6 @@
 		C749F3FD1B541D19004311A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C749F3FE1B541D19004311A8 /* STEMinistWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STEMinistWorldTests.swift; sourceTree = "<group>"; };
 		C749F4091B542B49004311A8 /* ScienceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScienceViewController.swift; sourceTree = "<group>"; };
-		C749F40B1B542B5A004311A8 /* TechViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechViewController.swift; sourceTree = "<group>"; };
-		C749F40D1B542B68004311A8 /* EngineeringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngineeringViewController.swift; sourceTree = "<group>"; };
-		C749F40F1B542B71004311A8 /* MathViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathViewController.swift; sourceTree = "<group>"; };
 		C78486841B61A77400B4E734 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = ViewControllers/ViewControllers/WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,10 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				C749F4091B542B49004311A8 /* ScienceViewController.swift */,
-				C749F40B1B542B5A004311A8 /* TechViewController.swift */,
-				C749F40D1B542B68004311A8 /* EngineeringViewController.swift */,
-				C749F40F1B542B71004311A8 /* MathViewController.swift */,
 				C78486841B61A77400B4E734 /* WelcomeViewController.swift */,
+				C70AE09D1B6984F100CBABF0 /* ModalViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -232,12 +226,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C749F40E1B542B68004311A8 /* EngineeringViewController.swift in Sources */,
-				C749F4101B542B71004311A8 /* MathViewController.swift in Sources */,
-				C749F40C1B542B5A004311A8 /* TechViewController.swift in Sources */,
 				C78486851B61A77400B4E734 /* WelcomeViewController.swift in Sources */,
 				C749F3E91B541D18004311A8 /* AppDelegate.swift in Sources */,
 				C749F40A1B542B49004311A8 /* ScienceViewController.swift in Sources */,
+				C70AE09E1B6984F100CBABF0 /* ModalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

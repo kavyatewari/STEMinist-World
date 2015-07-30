@@ -64,6 +64,7 @@ class ScienceViewController: UIViewController, UITabBarControllerDelegate {
         }
         
         else if selectedIndex == 1 {
+            println("THE CURRENT INDEX IS \(selectedIndex)")
             currentDiscipline = "Tech"
     
             Line1.text = "Technologists are ________________"
@@ -79,8 +80,8 @@ class ScienceViewController: UIViewController, UITabBarControllerDelegate {
             let image3 = UIImage(named: "AnitaBorg") as UIImage!
             roleModel3Button.setImage(image3, forState: .Normal)
             
-//            let image4 = UIImage(named: "JoannaHoffman") as UIImage!
-//            roleModel3Button.setImage(image4, forState: .Normal)
+            let image4 = UIImage(named: "JoannaHoffman") as UIImage!
+            roleModel3Button.setImage(image4, forState: .Normal)
         }
         
         else if selectedIndex == 2 { 
@@ -90,17 +91,17 @@ class ScienceViewController: UIViewController, UITabBarControllerDelegate {
             Line2.text = "Does this sound like you?"
             Line3.text = "Explore the Engineering field to learn more!"
             
-//            let image = UIImage(named: "BeulahLouiseHenry") as UIImage!
-//            roleModel1Button.setImage(image, forState: .Normal)
-//            
-//            let image2 = UIImage(named: "HedyLamarr") as UIImage!
-//            roleModel2Button.setImage(image2, forState: .Normal)
-//            
-//            let image3 = UIImage(named: "SallyRide") as UIImage!
-//            roleModel3Button.setImage(image3, forState: .Normal)
-//            
-//            let image4 = UIImage(named: "MarissaMayer") as UIImage!
-//            roleModel3Button.setImage(image4, forState: .Normal)
+            let image = UIImage(named: "BeulahLouiseHenry") as UIImage!
+            roleModel1Button.setImage(image, forState: .Normal)
+            
+            let image2 = UIImage(named: "HedyLamarr") as UIImage!
+            roleModel2Button.setImage(image2, forState: .Normal)
+            
+            let image3 = UIImage(named: "SallyRide") as UIImage!
+            roleModel3Button.setImage(image3, forState: .Normal)
+            
+            let image4 = UIImage(named: "MarissaMayer") as UIImage!
+            roleModel3Button.setImage(image4, forState: .Normal)
         }
         
         else if selectedIndex == 3 {
@@ -110,18 +111,19 @@ class ScienceViewController: UIViewController, UITabBarControllerDelegate {
             Line2.text = "Does this sound like you?"
             Line3.text = "Explore the Mathematics field to learn more!"
             
-//            let image = UIImage(named: "ElizabethBlackwell") as UIImage!
-//            roleModel1Button.setImage(image, forState: .Normal)
-//            
-//            let image2 = UIImage(named: "MarieCurie") as UIImage!
-//            roleModel2Button.setImage(image2, forState: .Normal)
-//            
-//            let image3 = UIImage(named: "RosalindFranklin") as UIImage!
-//            roleModel3Button.setImage(image3, forState: .Normal)
-//            
-//            let image4 = UIImage(named: "DorothyHodgkin") as UIImage!
-//            roleModel3Button.setImage(image4, forState: .Normal)
+            let image = UIImage(named: "MariaGaetanaAgnesi") as UIImage!
+            roleModel1Button.setImage(image, forState: .Normal)
+
+            let image2 = UIImage(named: "SofiaKovalevskaya") as UIImage!
+            roleModel2Button.setImage(image2, forState: .Normal)
+
+            let image3 = UIImage(named: "EmmyNoether") as UIImage!
+            roleModel3Button.setImage(image3, forState: .Normal)
+
+            let image4 = UIImage(named: "ShakuntalaDevi") as UIImage!
+            roleModel3Button.setImage(image4, forState: .Normal)
         }
+//        tabBarController.viewControllers[selectedIndex].refreshView(NSNotification())
     }
     
     override func viewDidLoad() {
@@ -129,7 +131,6 @@ class ScienceViewController: UIViewController, UITabBarControllerDelegate {
         
         self.tabBarController?.delegate = self
         
-        self.Line1.text = "hello"
         self.roleModel1Button.layer.cornerRadius = 42
         self.roleModel1Button.clipsToBounds = true
         
