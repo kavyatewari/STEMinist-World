@@ -311,7 +311,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="7sr-xv-RyK"/>
                                                 </constraints>
-                                                <state key="normal" image="AnitaBorg" backgroundImage="AnitaBorg">
+                                                <state key="normal" image="AnitaBorg">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -613,19 +613,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sb8-2z-KYB" userLabel="content view">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="601"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpS-Dz-eJq" userLabel="Elizabeth Blackwell">
-                                                <rect key="frame" x="10" y="117" width="80" height="80"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="80" id="l5a-zO-xLj"/>
-                                                    <constraint firstAttribute="height" constant="80" id="xUh-mu-80C"/>
-                                                </constraints>
-                                                <state key="normal" image="ElizabethBlackwell">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="hWO-IE-6XZ" kind="presentation" id="TC8-Dt-BQk"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7XX-hj-xuJ" userLabel="Marie Curie">
                                                 <rect key="frame" x="10" y="207" width="80" height="80"/>
                                                 <constraints>
@@ -636,6 +623,18 @@
                                                 </state>
                                                 <connections>
                                                     <segue destination="u07-nW-45P" kind="presentation" id="gRf-xA-teg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFt-bH-4HO" userLabel="Rosalind Franklin">
+                                                <rect key="frame" x="10" y="299" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="fNE-RU-S3z"/>
+                                                </constraints>
+                                                <state key="normal" image="RosalindFranklin-1">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="4es-LY-NcA" kind="presentation" id="TA6-uB-K8w"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgz-eL-RzZ" userLabel="Dorothy Hodgkin">
@@ -673,16 +672,17 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFt-bH-4HO" userLabel="Rosalind Franklin">
-                                                <rect key="frame" x="10" y="299" width="80" height="80"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpS-Dz-eJq" userLabel="Elizabeth Blackwell">
+                                                <rect key="frame" x="10" y="119" width="80" height="80"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="fNE-RU-S3z"/>
+                                                    <constraint firstAttribute="width" constant="80" id="l5a-zO-xLj"/>
+                                                    <constraint firstAttribute="height" constant="80" id="xUh-mu-80C"/>
                                                 </constraints>
-                                                <state key="normal" image="RosalindFranklin-1">
+                                                <state key="normal" image="ElizabethBlackwell">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="4es-LY-NcA" kind="presentation" id="TA6-uB-K8w"/>
+                                                    <segue destination="hWO-IE-6XZ" kind="presentation" id="TC8-Dt-BQk"/>
                                                 </connections>
                                             </button>
                                         </subviews>

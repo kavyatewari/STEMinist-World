@@ -81,7 +81,7 @@ class ScienceViewController: UIViewController, UITabBarControllerDelegate {
             roleModel3Button.setImage(image3, forState: .Normal)
             
             let image4 = UIImage(named: "JoannaHoffman") as UIImage!
-            roleModel3Button.setImage(image4, forState: .Normal)
+            roleModel4Button.setImage(image4, forState: .Normal)
         }
         
         else if selectedIndex == 2 { 
@@ -101,7 +101,7 @@ class ScienceViewController: UIViewController, UITabBarControllerDelegate {
             roleModel3Button.setImage(image3, forState: .Normal)
             
             let image4 = UIImage(named: "MarissaMayer") as UIImage!
-            roleModel3Button.setImage(image4, forState: .Normal)
+            roleModel4Button.setImage(image4, forState: .Normal)
         }
         
         else if selectedIndex == 3 {
@@ -121,7 +121,7 @@ class ScienceViewController: UIViewController, UITabBarControllerDelegate {
             roleModel3Button.setImage(image3, forState: .Normal)
 
             let image4 = UIImage(named: "ShakuntalaDevi") as UIImage!
-            roleModel3Button.setImage(image4, forState: .Normal)
+            roleModel4Button.setImage(image4, forState: .Normal)
         }
 //        tabBarController.viewControllers[selectedIndex].refreshView(NSNotification())
     }
