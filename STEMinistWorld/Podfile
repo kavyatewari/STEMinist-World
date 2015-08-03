@@ -1,13 +1,5 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '6.0'
 
-target 'STEMinistWorld' do
     use_frameworks!
     pod 'RealmSwift'
-end
-
-target 'STEMinistWorldTests' do
-    use_frameworks!
-    pod 'RealmSwift'
-end
-

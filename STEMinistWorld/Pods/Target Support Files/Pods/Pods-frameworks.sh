@@ -52,10 +52,10 @@ code_sign_if_enabled() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework 'Pods-STEMinistWorldTests/Realm.framework'
-  install_framework 'Pods-STEMinistWorldTests/RealmSwift.framework'
+  install_framework 'Pods/Realm.framework'
+  install_framework 'Pods/RealmSwift.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework 'Pods-STEMinistWorldTests/Realm.framework'
-  install_framework 'Pods-STEMinistWorldTests/RealmSwift.framework'
+  install_framework 'Pods/Realm.framework'
+  install_framework 'Pods/RealmSwift.framework'
 fi

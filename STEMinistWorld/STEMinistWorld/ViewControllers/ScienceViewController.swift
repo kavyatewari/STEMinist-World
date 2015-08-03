@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import RealmSwift
 
 class ScienceViewController: UIViewController, UITabBarControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     

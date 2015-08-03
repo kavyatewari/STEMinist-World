@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27263F74411588DB12B0E1AF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D926A2DB597FD6EEB5A195F /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		27D41272DC5B97EFD2C5E851 /* Pods_STEMinistWorldTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317B274968A2BA1CED67DB17 /* Pods_STEMinistWorldTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		70F6BFA42C426A6C02D607CD /* Pods_STEMinistWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D34BB16E9C393B90D77958E /* Pods_STEMinistWorld.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C70AE09E1B6984F100CBABF0 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70AE09D1B6984F100CBABF0 /* ModalViewController.swift */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		1D34BB16E9C393B90D77958E /* Pods_STEMinistWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STEMinistWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		317B274968A2BA1CED67DB17 /* Pods_STEMinistWorldTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STEMinistWorldTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D926A2DB597FD6EEB5A195F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8CB50961F5B02BC02F593D /* Pods-STEMinistWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STEMinistWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STEMinistWorld/Pods-STEMinistWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		6E7889F8B09902F5EA4CE792 /* Pods-STEMinistWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STEMinistWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-STEMinistWorld/Pods-STEMinistWorld.release.xcconfig"; sourceTree = "<group>"; };
 		C24F251328378EFE846BBF6C /* Pods-STEMinistWorldTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STEMinistWorldTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STEMinistWorldTests/Pods-STEMinistWorldTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70F6BFA42C426A6C02D607CD /* Pods_STEMinistWorld.framework in Frameworks */,
+				27263F74411588DB12B0E1AF /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +78,7 @@
 			children = (
 				1D34BB16E9C393B90D77958E /* Pods_STEMinistWorld.framework */,
 				317B274968A2BA1CED67DB17 /* Pods_STEMinistWorldTests.framework */,
+				4D926A2DB597FD6EEB5A195F /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -302,7 +306,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STEMinistWorld/Pods-STEMinistWorld-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BD866B45232DD7C62F8873D5 /* Check Pods Manifest.lock */ = {
@@ -347,7 +351,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STEMinistWorld/Pods-STEMinistWorld-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

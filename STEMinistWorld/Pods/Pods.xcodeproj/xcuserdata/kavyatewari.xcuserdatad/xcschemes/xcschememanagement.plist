@@ -4,12 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-STEMinistWorld.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-STEMinistWorldTests.xcscheme</key>
+		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -26,6 +21,22 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>765435E03B00B93E607AA6C34F93D227</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8530DEDBC37DD75056E54EB064F88745</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B4CBC66B094BE3FFF1934E66F665A8A1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

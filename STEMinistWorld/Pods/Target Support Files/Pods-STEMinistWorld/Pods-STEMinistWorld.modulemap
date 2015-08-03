@@ -1,6 +1,0 @@
-framework module Pods_STEMinistWorld {
-  umbrella header "Pods-STEMinistWorld-umbrella.h"
-
-  export *
-  module * { export * }
-}
