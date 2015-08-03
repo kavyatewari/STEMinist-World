@@ -12,7 +12,7 @@ class ModalViewController: UIViewController {
     
     @IBAction func Dismiss(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: {});
-        println("pressed")
+        println("modal view is dismissed")
     }
 
     override func viewDidLoad() {

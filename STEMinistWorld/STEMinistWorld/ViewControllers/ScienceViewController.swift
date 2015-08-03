@@ -8,7 +8,52 @@
 
 import UIKit
 
-class ScienceViewController: UIViewController, UITabBarControllerDelegate {
+class ScienceViewController: UIViewController, UITabBarControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    var imagePicker: UIImagePickerController!
+    
+    @IBOutlet var scienceView: UIImageView!
+    @IBOutlet var scienceButton: UIButton!
+   
+    @IBOutlet var techButton: UIButton!
+    @IBOutlet var techView: UIImageView!
+    
+    @IBOutlet var mathButton: UIButton!
+    @IBOutlet var mathView: UIImageView!
+    
+    @IBOutlet var engineeringButton: UIButton!
+    @IBOutlet var engineeringView: UIImageView!
+
+    @IBAction func takePhotos(sender: UIButton) {
+        self.takePicture(sender)
+    }
+    @IBAction func takeScienceViewController(sender: UIButton) {
+        self.takePicture(sender)
+    }
+    
+    @IBAction func takeTechPhoto(sender: UIButton) {
+        self.takePicture(sender)
+    }
+    
+    @IBAction func takeMathPhoto(sender: UIButton) {
+        self.takePicture(sender)
+    }
+    func takePicture(sender: UIButton) {
+        imagePicker =  UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .PhotoLibrary
+        presentViewController(imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        self.imagePicker.dismissViewControllerAnimated(true, completion: nil)
+        self.scienceView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        self.mathView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        self.techView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        self.engineeringView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+    }
+    
+
     
     enum discipline {
         
@@ -169,3 +214,55 @@ class ScienceViewController: UIViewController, UITabBarControllerDelegate {
     */
 
 }
+
+//class PhotoTakingHelper : NSObject {
+//    
+//      var photoTakingHelper: PhotoTakingHelper?
+//    
+//    /** View controller on which AlertViewController and UIImagePickerController are presented */
+//    weak var viewController: UIViewController!
+//    var callback: PhotoTakingHelperCallback
+//    var imagePickerController: UIImagePickerController?
+//    
+//    init(viewController: UIViewController, callback: PhotoTakingHelperCallback) {
+//        self.viewController = viewController
+//        self.callback = callback
+//        
+//        super.init()
+//        
+//        showPhotoSourceSelection()
+//    }
+//    
+//        func showPhotoSourceSelection() {
+//            // Allow user to choose between photo library and camera
+//            let alertController = UIAlertController(title: nil, message: "Where do you want to get your picture from?", preferredStyle: .ActionSheet)
+//            
+//            let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+//            alertController.addAction(cancelAction)
+//            
+//            // Only show camera option if rear camera is available
+//            if (UIImagePickerController.isCameraDeviceAvailable(.Rear)) {
+//                let cameraAction = UIAlertAction(title: "Photo from Camera", style: .Default) { (action) in
+//                    // do nothing yet...
+//                }
+//                
+//                alertController.addAction(cameraAction)
+//            }
+//            
+//            let photoLibraryAction = UIAlertAction(title: "Photo from Library", style: .Default) { (action) in
+//                // do nothing yet...
+//            }
+//            
+//            alertController.addAction(photoLibraryAction)
+//            
+//            viewController.presentViewController(alertController, animated: true, completion: nil)
+//        }
+//    
+////    func takePhoto() {
+////        // instantiate photo taking class, provide callback for when photo  is selected
+////        photoTakingHelper = PhotoTakingHelper(viewController: self.!) { (image: UIImage?) in
+////            // don't do anything, yet...
+//        }
+//    }
+//    
+//}
