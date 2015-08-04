@@ -12,49 +12,48 @@ class ScienceViewController: UIViewController, UITabBarControllerDelegate, UIIma
     
     var imagePicker: UIImagePickerController!
     
- //selfie button and view
     @IBOutlet var scienceView: UIImageView!
     @IBOutlet var scienceButton: UIButton!
    
-//    @IBOutlet var techButton: UIButton!
-//    @IBOutlet var techView: UIImageView!
-//    
-//    @IBOutlet var mathButton: UIButton!
-//    @IBOutlet var mathView: UIImageView!
-//    
-//    @IBOutlet var engineeringButton: UIButton!
-//    @IBOutlet var engineeringView: UIImageView!
+    @IBOutlet var techButton: UIButton!
+    @IBOutlet var techView: UIImageView!
     
+    @IBOutlet var mathButton: UIButton!
+    @IBOutlet var mathView: UIImageView!
+    
+    @IBOutlet var engineeringButton: UIButton!
+    @IBOutlet var engineeringView: UIImageView!
+
+    @IBAction func takePhotos(sender: UIButton) {
+        self.takePicture(sender)
+    }
+    @IBAction func takeScienceViewController(sender: UIButton) {
+        self.takePicture(sender)
+    }
+    
+    @IBAction func takeTechPhoto(sender: UIButton) {
+        self.takePicture(sender)
+    }
+    
+    @IBAction func takeMathPhoto(sender: UIButton) {
+        self.takePicture(sender)
+    }
     func takePicture(sender: UIButton) {
         imagePicker =  UIImagePickerController()
         imagePicker.delegate = self
         imagePicker.sourceType = .PhotoLibrary
         presentViewController(imagePicker, animated: true, completion: nil)
     }
-
-//    @IBAction func takePhotos(sender: UIButton) {
-//        self.takePicture(sender)
-//    }
     
-    @IBAction func takeScienceViewController(sender: UIButton) {
-        self.takePicture(sender)
-    }
-//    
-//    @IBAction func takeTechPhoto(sender: UIButton) {
-//        self.takePicture(sender)
-//    }
-//    
-//    @IBAction func takeMathPhoto(sender: UIButton) {
-//        self.takePicture(sender)
-//    }
-
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
         self.imagePicker.dismissViewControllerAnimated(true, completion: nil)
         self.scienceView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
-//        self.mathView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
-//        self.techView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
-//        self.engineeringView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        self.mathView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        self.techView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        self.engineeringView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
     }
+    
+
     
     enum discipline {
         
@@ -78,6 +77,12 @@ class ScienceViewController: UIViewController, UITabBarControllerDelegate, UIIma
     @IBOutlet weak var Line2: UILabel!
     @IBOutlet weak var Line3: UILabel!
     
+    @IBOutlet weak var disciplineDetector: UITabBarItem!
+    
+    override func viewDidDisappear(animated: Bool) {
+        UITabBar.appearance().tintColor = UIColor.greenColor()
+    }
+    
     func tabBarController(tabBarController: UITabBarController, didSelectViewController viewController: UIViewController) {
         
         var selectedIndex = tabBarController.selectedIndex
@@ -99,7 +104,7 @@ class ScienceViewController: UIViewController, UITabBarControllerDelegate, UIIma
             roleModel3Button.setImage(image3, forState: .Normal)
             
             let image4 = UIImage(named: "DorothyHodgkin") as UIImage!
-            roleModel4Button.setImage(image4, forState: .Normal)
+            roleModel3Button.setImage(image4, forState: .Normal)
             
         }
         
@@ -183,8 +188,8 @@ class ScienceViewController: UIViewController, UITabBarControllerDelegate, UIIma
         self.roleModel4Button.layer.cornerRadius = 42
         self.roleModel4Button.clipsToBounds = true
         
-        self.scienceView.layer.cornerRadius = 42
-        self.scienceView.clipsToBounds = true
+        self.selfieButton.layer.cornerRadius = 25
+        self.selfieButton.clipsToBounds = true
         
         
         // Do any additional setup after loading the view.
